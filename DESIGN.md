@@ -22,3 +22,42 @@ We are building this in [Godot 4.7](https://godotengine.org/)
 - **Look**: mouse point
 - **Inspect**: left mouse click
 - **Use Item**: Number keys to select slot, enter to activate. (*Hold shift for tooltips?*)
+
+#### Actions:
+
+- Explore Museum
+- Pick up items
+- Take items to exit or drop off point
+- Scored on items
+
+#### Loop Timeframe
+
+- *Limited time in museum to retrieve items* 
+- *or have a certain number of loops through the museum to get the highest score possible or beat a predetermined score*
+
+## Mechanics
+
+- The player can pick up and add items to a *limited* inventory
+- *Items can be swapped for other items, but not directly dropped*
+- The items will have a randomized effect, harmful or helpful, that is hidden until picked up
+- Items have value
+  - *Point value: all items are worth 1 point or points based on item and added point display*
+  - *Monetary value: items have sell value based on item and added monetary display*
+- *Glow effet: Some items may show only after having a light shine on them for some time and then turned off*
+ 
+### Item Effects
+
+#### Positive Effects
+
+- *Give more inventory space*
+- *Give a geiger counter to help the player find items*
+- *Double total item value*
+- *Give a brighter flashlight*
+
+#### Negative Effects
+
+- *Give less inventory space*
+- *Halve total item value*
+- *Give a dimmer flashlight*
+- *Make the player "trip" or freeze for 3 seconds every 60 seconds*
+
