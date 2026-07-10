@@ -62,6 +62,10 @@ We are building this in [Godot 4.7](https://godotengine.org/)
 
 - **Flashlight**: activates glow effect on some cursed items
   - Some items may glow after having a light shine on them for some time and then turned off. Effect dims over time after light is turned off
+    - Glow is visual and audible (slight hum)
+- **Geiger Counter(*?*)**: activates audible effect on some cursed items
+  - Some items may respond audibly when the geiger counter is held near them
+    - 'Sound' is audible (clicking/tinking) as well as visual (flickery/glittery effect)
 
 ### Item Effects
 
