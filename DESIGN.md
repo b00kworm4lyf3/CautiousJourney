@@ -16,18 +16,24 @@ While inspecting items, you discover that you can activate the curses on the ite
 
 We are building this in [Godot 4.7](https://godotengine.org/)
 
-## Controls and Core Loop
+### Jam Goals
 
-- **Move**: WASD/arrow keys
+- Single room with at least 1 permanent tool and 2/3 cursed items
+- Basic UI with hotlist of collected cursed items
+- Ability to inspect items and identify them for removal, sell straight from hotlist instead of taking to dropoff point
+
+## Controls and Core Loop (Stretch in Italics)
+
+- **Move**: WASD/arrow keys (*+click and drag movement*)
 - **Look**: mouse point
 - **Inspect**: left mouse click
-- **Use Item**: Number keys to select slot, enter to activate. (*hover for 'tooltips'?*)
+- **Use Item**: Number keys to select slot, enter to activate. Alternatively left click to select and double click to activate. (*hover for 'tooltips'*)
 
 ### Actions
 
-- **Explore Museum**: Walk around room(*s*), open cupboards, drawers, doors, etc
+- **Explore Museum**: Walk around room(*s*), *open cupboards, drawers, doors, etc*
 - **Pick Up Items**: Inspect suspicious/anomalous items and identify if they need to be removed
-- **Cash In**: Take items to exit or drop off point if effect isn't used
+- **Cash In**: *Take items to exit or drop off point if effect isn't used*
 - **Scores On Items**: Monetary value for unused cursed items --> $/total possible when player decides they want to leave/be done
 
 ### Loop Timeframe --> ***NEEDS MORE BRAINSTORMING***
@@ -35,7 +41,7 @@ We are building this in [Godot 4.7](https://godotengine.org/)
 - *Limited time in museum to retrieve items*
 - *or have a certain number of loops through the museum to get the highest score possible or beat a predetermined score*
 
-## Mechanics
+## Mechanics (Italics are where more brainstorming or effort is needed)
 
 - The player can pick up and add items to a limited inventory (***How many spaces?***)
 - Storage Behaviour: If inventory is full, current items need to be used + placed back in the room OR cashed in at drop off point
