@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://c1t5sn3as2lc3"]
+
+[sub_resource type="PlaceholderMesh" id="PlaceholderMesh_tu7uc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aiegb"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8jvxw"]
+material = SubResource("StandardMaterial3D_aiegb")
+size = Vector2(10, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_htyjp"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tu7uc"]
+material = SubResource("StandardMaterial3D_htyjp")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_x60sr"]
+material = SubResource("StandardMaterial3D_htyjp")
+
+[node name="Test Room" type="Node3D" unique_id=204136394]
+
+[node name="Room" type="MeshInstance3D" parent="." unique_id=1421078596]
+transform = Transform3D(2, 0, 0, 0, 1.5, 0, 0, 0, 2.25, 0, 0, 0)
+mesh = SubResource("PlaceholderMesh_tu7uc")
+
+[node name="Floor" type="MeshInstance3D" parent="Room" unique_id=1658993198]
+mesh = SubResource("PlaneMesh_8jvxw")
+
+[node name="Wall1" type="MeshInstance3D" parent="Room" unique_id=1862912760]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 5, 5, 1, 0)
+mesh = SubResource("PlaneMesh_tu7uc")
+
+[node name="Wall2" type="MeshInstance3D" parent="Room" unique_id=1630050500]
+transform = Transform3D(1.9106855e-15, 4.371139e-08, 5, 1, -4.3711385e-08, 0, 4.3711385e-08, 1, -2.1855695e-07, 0, 1, -5)
+mesh = SubResource("PlaneMesh_tu7uc")
+
+[node name="Wall3" type="MeshInstance3D" parent="Room" unique_id=460435858]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 5, -5, 1, 0)
+mesh = SubResource("PlaneMesh_x60sr")
+
+[node name="Wall4" type="MeshInstance3D" parent="Room" unique_id=742894783]
+transform = Transform3D(1.9106855e-15, 4.371139e-08, 3.7329845, -1, -4.3711392e-08, 1.4265119e-14, 4.3711392e-08, -1, 1.6317392e-07, -1.413981, 1, 5)
+mesh = SubResource("PlaneMesh_tu7uc")
+
+[node name="Wall5" type="MeshInstance3D" parent="Room" unique_id=1436790079]
+transform = Transform3D(1.9106855e-15, 4.371139e-08, 1.001522, -1, -4.3711392e-08, 3.8271888e-15, 4.3711392e-08, -1, 4.377792e-08, 4.31789, 1, 5)
+mesh = SubResource("PlaneMesh_tu7uc")
+
+[node name="AreaLight3D" type="AreaLight3D" parent="Room" unique_id=1010292361]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 3, 0)
+light_color = Color(0.9647059, 0.83137256, 0.5176471, 1)
+light_energy = 5.0
+area_range = 10.0
+area_size = Vector2(5, 5)

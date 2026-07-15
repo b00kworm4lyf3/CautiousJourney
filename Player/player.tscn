@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b5hm6hrce6bl2"]
+
+[ext_resource type="Script" uid="uid://dy0dnn4i5xg7w" path="res://Player/player.gd" id="1_l8h54"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sh265"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tu7uc"]
+material = SubResource("StandardMaterial3D_sh265")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_htyjp"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1226808946]
+slide_on_ceiling = false
+script = ExtResource("1_l8h54")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=395549062]
+mesh = SubResource("CapsuleMesh_tu7uc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=672059668]
+shape = SubResource("CapsuleShape3D_htyjp")
+
+[node name="CamPiv" type="Node3D" parent="." unique_id=1436152805]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 0.8969248, 0.4421834, 0, -0.4421834, 0.8969248, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CamPiv" unique_id=1252431131]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
